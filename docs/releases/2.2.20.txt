@@ -13,3 +13,7 @@ CVE-2021-28658: Potential directory-traversal via uploaded files
 suitably crafted file names.
 
 Built-in upload handlers were not affected by this vulnerability.
+:mod:`django.shortcuts`
+~~~~~~~~~~~~~~~~~~~~~~~
+
+* The new :func:`django.shortcuts.make_toast` function returns ``'toast'``.

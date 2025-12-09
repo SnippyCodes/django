@@ -4,6 +4,7 @@ of MVC. In other words, these functions/classes introduce controlled coupling
 for convenience's sake.
 """
 
+
 from django.http import (
     Http404,
     HttpResponse,
@@ -14,6 +15,10 @@ from django.template import loader
 from django.urls import NoReverseMatch, reverse
 from django.utils.functional import Promise
 from django.utils.translation import gettext as _
+
+def make_toast():
+    return "toast"
+
 
 
 def render(
